@@ -5,7 +5,4 @@ numpy
 pyyaml
 python-dotenv
 
-# (Later steps)
-ultralytics
-onnxruntime
-google-generativeai
+
