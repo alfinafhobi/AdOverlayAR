@@ -1,0 +1,16 @@
+backend: "torch"
+weights_path: "yolov8n.pt"    # n = fastest
+img_size: 768                 # ↑ more pixels helps small/tilted phones
+
+conf_thres: 0.15              # ↓ accept weaker boxes
+iou_nms: 0.45                 # standard IoU
+detect_interval: 20
+
+# COCO class ids likely to match phones/monitors:
+# 62: tv, 63: laptop, 67: cell phone
+classes: []         # (start with this; if nothing shows, set [] to allow all)
+
+max_detections: 1
+device: "CPU"                # CUDA if available, else CPU
+half: false                   # set TRUE only if device is CUDA
+agnostic_nms: true            # ignore class when NMSing close boxes (helps)

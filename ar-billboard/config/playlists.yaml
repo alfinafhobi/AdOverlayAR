@@ -1,0 +1,6 @@
+default_images:
+  - "assets/default_images/ad_16x9_1.jpeg"
+  - "assets/default_images/ad_16x9_2.jpeg"
+  - "assets/default_images/ad_4x3_1.jpeg"
+
+default_videos: []   # we'll wire video in Step 6
